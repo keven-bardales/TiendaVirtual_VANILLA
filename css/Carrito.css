@@ -1,0 +1,182 @@
+/* Estilos para los botones */
+.btns button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  border: none;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btns button:hover {
+  background-color: #ddd;
+}
+
+#limpiarCarrito,
+#showCheckout {
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+#limpiarCarrito:hover,
+#showCheckout:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos adicionales para mejorar la apariencia general */
+#Carrito {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itemCarrito {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.itemCarrito img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.itemCarrito h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.itemCarrito span {
+  font-weight: bold;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+#limpiarCarrito,
+#showCheckout {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#limpiarCarrito {
+  background-color: #dc3545;
+}
+
+#limpiarCarrito:hover {
+  background-color: #c82333;
+}
+
+#showCheckout {
+  background-color: #28a745;
+}
+
+#showCheckout:hover {
+  background-color: #218838;
+}
+
+#registrationForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.inputRegister {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#btnRegistrarse {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#btnRegistrarse:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 20px;
+}
+
+#btnInicioSesion {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#btnInicioSesion:hover {
+  text-decoration: underline;
+}
+
+#loginForm {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.inputLogin {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#loginForm button[type='submit'] {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#loginForm button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 20px;
+}
+
+#btnRegistrarse:hover {
+  text-decoration: underline;
+}
