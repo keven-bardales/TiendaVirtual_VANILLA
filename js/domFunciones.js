@@ -104,8 +104,8 @@ export const OpcionesInciales = () => {
 
   document.addEventListener('click', (event) => {
     const mobileMenu = document.getElementById('mobileMenu')
-    if (event.target !== mobileMenu && event.target !== btn_menu_Mobile) {
-      console.log('first')
+    const btnMob = document.getElementById('btn_menu_Mobile')
+    if (event.target !== mobileMenu && event.target !== btnMob) {
       ocultarMenuMobile()
     }
   })

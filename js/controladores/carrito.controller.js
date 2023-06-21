@@ -20,6 +20,7 @@ export const agregarCarrito = async (el) => {
   const POSICION_CARRITO = productoExisteCarrito(producto)
   if (POSICION_CARRITO != -1) {
     PRODUCTOS_CARRITO[POSICION_CARRITO]['cantidad'] += 1
+    guardarCarrito()
     return
   }
   producto['cantidad'] = 1
