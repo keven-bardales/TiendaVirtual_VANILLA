@@ -1,6 +1,6 @@
 export const InicioSesion = () => {
   return `
-  <section id="sectionLogin">  
+  <section class="sectionLogin">  
 
   <div class="contenedor">
   <form id="loginForm">
@@ -8,9 +8,9 @@ export const InicioSesion = () => {
   <input class="inputLogin"  type="password" placeholder="Contraseña" required>
   <button type="submit">Iniciar sesión</button>
 </form>
+<p>¿No tienes una cuenta?</p>
+<a id="btnRegistrarse" href="#">Regístrate</a>
 </div>
-
-<div class="contenedor"><p>¿No tienes una cuenta? <a id="btnRegistrarse" href="#">Regístrate</a></p></div> 
   </section>
     `
 }

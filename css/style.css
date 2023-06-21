@@ -166,13 +166,22 @@ ul.desktopMenu li a:hover {
   color: white;
 }
 
-#sectionLogin {
+.sectionLogin {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
 
-#sectionLogin .contenedor {
-  flex-basis: 100%;
+.sectionLogin .contenedor {
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
+}
+
+.sectionLogin .contenedor a,
+.sectionLogin .contenedor p {
+  flex-basis: 70%;
+  margin-top: 0;
+  margin-bottom: 1em;
 }

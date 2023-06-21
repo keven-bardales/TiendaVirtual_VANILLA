@@ -8,7 +8,7 @@ export function NavBar() {
 
   return `<nav class="navbar">
     <ul class="mobileMenu"> 
-    <li><a id="btn_menu_Mobile" href="#"><i class="fa-solid fa-bars"></i></a> 
+    <li><a  href="#"><i id="btn_menu_Mobile" class="fa-solid fa-bars"></i></a> 
     <a id="btnCategorias" href="#"><i class="fa-solid fa-house"></i></a>
     </li>
       <li>
