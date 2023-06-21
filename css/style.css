@@ -165,3 +165,14 @@ ul.desktopMenu li a:hover {
   background-color: #4caf50;
   color: white;
 }
+
+#sectionLogin {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#sectionLogin .contenedor {
+  flex-basis: 100%;
+  text-align: center;
+}
