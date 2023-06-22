@@ -10,12 +10,15 @@ import { ListaCategorias } from './componentes/categorias/ListaCategorias.js'
 import { productoExisteCarrito } from './controladores/carrito.controller.js'
 import { mostrarCategorias } from './controladores/categorias.controller.js'
 import { Chatbot } from './componentes/chatBot/ChatBot.js'
+import { getTiposPago } from './api.js'
 
 export const Body = document.querySelector('#root')
 export const Header = document.getElementById('head')
 export const divChatbot = document.getElementById('divChatbot')
 
 export let PRODUCTOS_CARRITO = JSON.parse(localStorage.getItem('carrito')) || []
+
+export const TIPOS_PAGO = await getTiposPago()
 
 const credenciales = JSON.parse(localStorage.getItem('credenciales')) || ''
 
@@ -75,3 +78,18 @@ export const cerrarSesion = () => {
   LimpiarMain()
   mostrarCategorias()
 }
+
+export function mostrarNotificacion(mensaje, invalido) {
+  var notificacion = document.getElementById('notification')
+  if (invalido == false) {
+    notificacion.classList.add('invalido')
+  }
+  notificacion.innerHTML = mensaje
+  notificacion.style.display = 'block'
+  setTimeout(function () {
+    notificacion.style.display = 'none'
+  }, 2000)
+}
+
+// Ejemplo de uso:
+mostrarNotificacion('Esta es una notificación')

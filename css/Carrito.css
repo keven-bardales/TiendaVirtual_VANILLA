@@ -180,3 +180,21 @@ p {
 #btnRegistrarse:hover {
   text-decoration: underline;
 }
+
+#formCheckout input[type='submit'] {
+  margin-top: 1em;
+}
+
+div.valido,
+div.invalido {
+  padding: 0.5em;
+  color: white;
+}
+
+.valido {
+  background-color: green !important;
+}
+
+.invalido {
+  background-color: red !important;
+}

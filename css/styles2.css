@@ -73,7 +73,8 @@ i {
 }
 
 #formCheckout input[type='text'],
-#formCheckout input[type='submit'] {
+#formCheckout input[type='submit'],
+#formCheckout select {
   display: block;
   width: 100%;
   padding: 8px 12px;

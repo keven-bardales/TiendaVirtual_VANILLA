@@ -57,13 +57,20 @@ export const sendCheckout = async ({
   direccion,
   tipo_pago,
   digitos,
-  ccv,
+  cvv,
   fecha,
   titular,
 }) => {
-  const funcion = `create_checkout&cliente=${cliente}&direccion=${direccion}&tipo_pago=${tipo_pago}&digitos=${digitos}&ccv=${ccv}&fecha=${fecha}&titular=${titular}`
-  const response = await fetch(`${API.URL}${funcion}`)
-  const data = await response.json()
+  try {
+    const funcion = `create_checkout&cliente=${cliente}&direccion=${direccion}&tipo_pago=${tipo_pago}&digitos=${digitos}&cvv=${cvv}&fecha=${fecha}&titular=${titular}`
+    const response = await fetch(`${API.URL}${funcion}`)
+    const data = await response.json()
+    console.log(data)
+    return data
+  } catch (error) {
+    console.log(error)
+    return false
+  }
 }
 
 export const registrarUsuario = async ({
@@ -76,4 +83,16 @@ export const registrarUsuario = async ({
   const response = await fetch(`${API.URL}${funcion}`)
   const datos = await response.json()
   return datos
+}
+
+export const getTiposPago = async () => {
+  const funcion = `tipos_pago`
+  const response = await fetch(`${API.URL}${funcion}`)
+  const data = await response.json()
+
+  const tiposPagos = data.tipos_pagos.map((pago) => {
+    return { nombrePago: pago.nombre, id: pago.id }
+  })
+
+  return tiposPagos
 }

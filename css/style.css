@@ -137,10 +137,6 @@ ul.desktopMenu li a:hover {
   background-color: #45a049;
 }
 
-#Chatbot {
-  /* Estilos adicionales para el chatbot */
-}
-
 #listaMensajes {
   margin-top: 20px;
 }
@@ -184,4 +180,17 @@ ul.desktopMenu li a:hover {
   flex-basis: 70%;
   margin-top: 0;
   margin-bottom: 1em;
+}
+
+#notification {
+  padding: 1em;
+  border-radius: 1em;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: green;
+  color: white;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  opacity: 0.8;
 }
