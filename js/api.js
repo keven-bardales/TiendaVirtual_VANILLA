@@ -78,8 +78,9 @@ export const registrarUsuario = async ({
   password,
   nombre,
   email,
+  cargo,
 }) => {
-  const funcion = `create_usuario&username=${username}&password=${password}&nombre=${nombre}&email=${email}`
+  const funcion = `create_usuario&username=${username}&password=${password}&nombre=${nombre}&email=${email}&cargo=${cargo}`
   const response = await fetch(`${API.URL}${funcion}`)
   const datos = await response.json()
   return datos

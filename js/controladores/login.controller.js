@@ -73,6 +73,7 @@ export const cargarOpRegistrarse = async () => {
       password: password.value,
       nombre: nombre.value,
       email: email.value,
+      cargo: 3,
     }
     const userRegistrado = await registrarUsuario(user)
     if (userRegistrado) {

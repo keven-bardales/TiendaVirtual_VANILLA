@@ -60,7 +60,7 @@ export const crearCheckout = async (formCheckout) => {
     direccion: direccion.value,
     tipo_pago: tipo_pago.value,
     digitos: digitos.value,
-    ccv: cvv.value,
+    cvv: cvv.value,
     fecha: fecha.value,
     titular: titular.value,
   }
